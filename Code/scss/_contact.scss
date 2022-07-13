@@ -1,0 +1,36 @@
+//setting the home scss
+.contact{
+  height: 100vh;
+  padding-top: 28vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: 
+  //adding a gradient
+  linear-gradient(
+    to right,
+    rgba($primary-color, 0.7),
+    rgba($primary-color, 0.3)
+  ),
+  url('../../Code/dist/img/model-1.jpg') center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  &__list{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.3rem;
+  }
+  
+  .social__icons{
+    position: initial;
+    margin-top: 2rem;
+  }
+}

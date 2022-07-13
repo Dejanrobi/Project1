@@ -1,0 +1,33 @@
+//setting the home scss
+.home{
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: 
+  //adding a gradient
+  linear-gradient(
+    to right,
+    rgba($primary-color, 0.7),
+    rgba($primary-color, 0.3)
+  ),
+  url('../../Code/dist/img/model-1.jpg') center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__name{
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+    font-weight: 400;
+
+    &--last{
+      color: $secondary-color;
+      font-weight: 700;
+    }
+  }
+  
+  
+}

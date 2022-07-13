@@ -1,0 +1,52 @@
+//THIS IS A PARTIAL FILE
+//The underscore tells css not compile the file becuase its a partial file
+
+//VARIABLES
+$primary-color: #272727;
+$secondary-color: #ff652f;
+$text-color: #fff;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+  
+}
+
+//a function to set the text color
+@function set-text-color($color){
+  @if(lightness($color) >40%){
+    @return #000;
+  }@else{
+    @return #fff;
+  }
+}
+
+//Creating a responsive design
+//Medium Size
+@mixin media-md{
+  @media screen and (min-width: 768px){
+    //whenever we call this mixin, the content will be passed to this media query
+    @content;
+  }
+}
+
+//LARGE
+@mixin media-lg{
+  @media screen and (min-width: 1024px){
+    //whenever we call this mixin, the content will be passed to this media query
+    @content;
+  }
+}
+
+//EXTRA-LARGE
+@mixin media-xl{
+  @media screen and (min-width: 1600px){
+    //whenever we call this mixin, the content will be passed to this media query
+    @content;
+  }
+}
